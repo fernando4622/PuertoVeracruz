@@ -1,8 +1,8 @@
 # Puerto Veracruz 3D
 
-Este proyecto es una representación gráfica tridimensional e interactiva del malecón y zona portuaria de la ciudad de Veracruz, México. Está desarrollado íntegramente en **Java**, empleando las bibliotecas **JOGL** (Java Binding for the OpenGL API) y **JOML** (Java OpenGL Math Library) para construir un motor de renderizado gráfico de alto rendimiento a 60 fotogramas por segundo.
+Este proyecto es una representación gráfica tridimensional e interactiva del malecón y zona portuaria de la ciudad de Veracruz, México. Está desarrollado  en **Java**, empleando las bibliotecas **JOGL** (Java Binding for the OpenGL API) y **JOML** (Java OpenGL Math Library) para construir un motor de renderizado gráfico de alto rendimiento a 60 fotogramas por segundo.
 
-## 🚀 Características Principales
+## Características Principales
 
 - **Shadow Mapping Avanzado:** Renderizado en dos pasadas utilizando un *Framebuffer Object* (FBO) con un *Shadow Map* de 8192x8192 píxeles, logrando sombras dinámicas de alta fidelidad.
 - **Suavizado de Sombras (PCF):** Implementación de filtro matemático PCF (Percentage-Closer Filtering) 3x3 para evitar el efecto de sierra (aliasing) en los bordes de las sombras.
@@ -12,13 +12,13 @@ Este proyecto es una representación gráfica tridimensional e interactiva del m
 - **Horneado de Texturas (Texture Baking):** Técnica empleada durante la importación de modelos complejos para transcribir el color de una imagen mapeada directamente al formato unificado de colores por vértice.
 - **Cámara Primera Persona (FPS):** Sistema de navegación interactivo para recorrer la escena libremente.
 
-## 📋 Requisitos del Sistema
+## Requisitos del Sistema
 
 - **Java Development Kit (JDK) 17** o superior.
 - **Apache Maven** (para la gestión de dependencias y compilación).
 - Tarjeta gráfica con soporte para OpenGL 2.0 o superior.
 
-## 🛠️ Instalación y Ejecución
+## Instalación y Ejecución
 
 El proyecto está configurado con Maven, por lo que la importación de librerías (`jogl-all`, `gluegen-rt`, `joml`) se realiza automáticamente.
 
@@ -32,7 +32,7 @@ El proyecto está configurado con Maven, por lo que la importación de librería
    mvn exec:java -Dexec.mainClass="veracruz.PuertoVeracruz"
    ```
 
-## 🎮 Controles de Cámara
+## Controles de Cámara
 
 El simulador utiliza un sistema de control idéntico al de los videojuegos de PC:
 
@@ -44,7 +44,7 @@ El simulador utiliza un sistema de control idéntico al de los videojuegos de PC
 - **Rueda del Ratón o teclas `+` y `-`:** Ajustar el zoom / Campo de Visión (FOV).
 - **ESC:** Cerrar la aplicación de forma segura.
 
-## 🏗️ Arquitectura de Código
+## Arquitectura de Código
 
 El código fuente se encuentra en el paquete `veracruz` y se divide lógicamente en:
 
